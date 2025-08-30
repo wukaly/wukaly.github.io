@@ -1,0 +1,15 @@
+body {
+  font-family: Tirra, sans-serif;
+  text-align: center;
+  background-color: #fef8f5;
+  color: #333;
+}
+header h1 {
+  color: #ff66aa;
+}
+.logo {
+  display: block;
+  margin: 0 auto; /* centers the image */
+  width: 200px;
+  fill: #ff66aa;
+}
