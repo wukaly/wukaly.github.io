@@ -1,20 +1,21 @@
-/* Reset some default styles */
+@import url('w');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 html {
-  font-size: 23px; /* default is usually 16px */
+  font-size: 23px;
+  /* default is usually 16px */
 }
 
 body {
-  background-color: #f4f4f9;
-  color: #e3ebe4;
+  color: #e0e2f0;
   line-height: 1.6;
-  background-color: #070a07;
+  background-color: #0d0e11;
 }
 
 /* Container for layout */
@@ -28,12 +29,13 @@ body {
 /* Header Flex Layout */
 .header-flex {
   display: flex;
-  justify-content: space-between; /* space left, center, right */
+  justify-content: space-between;
+  /* space left, center, right */
   align-items: center;
 }
 
 .site-header {
-  background-color: #070a07;
+  background-color: #0d0e11;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -43,13 +45,13 @@ body {
 /* Left: Name */
 .header-left .site-title {
   font-size: 1.8rem;
-  color: #fff;
+  color: #b6bac4;
 }
 
 .header-left .site-title small {
   display: block;
-  font-size: 0.9rem;
-  color: #456056;
+  font-size: 0.8rem;
+  color: #b6bac4;
 }
 
 /* Center: Navigation */
@@ -60,7 +62,7 @@ body {
 }
 
 .main-nav a {
-  color: #fff;
+  color: #e0e2f0;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -78,7 +80,7 @@ body {
 }
 
 .social-nav a {
-  color: #fff;
+  color: #e0e2f0;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -106,7 +108,7 @@ body {
 
 .main-nav a,
 .social-nav a {
-  color: #fff;
+  color: #e0e2f0;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -130,15 +132,31 @@ section {
 }
 
 .about-image img {
-  width: 180px;        /* adjust size */
-  height: 180px;       /* keep square for circle crop */
-  border-radius: 50%;  /* makes it circular */
-  object-fit: cover;   /* ensures it crops nicely */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 180px;
+  /* adjust size */
+  height: 180px;
+  /* keep square for circle crop */
+  border-radius: 50%;
+  /* makes it circular */
+  object-fit: cover;
+  /* ensures it crops nicely */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 5px solid #e0e2f0;
+}
+
+.social-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.social-icon a:hover {
+  background-color: #83a59c;
 }
 
 .about-text {
+  text-align: left center;
   flex: 1;
+  color: #e0e2f0;
 }
 
 @media (max-width: 768px) {
@@ -152,7 +170,6 @@ section {
   }
 }
 
-
 .about-section p,
 .contact-section p {
   max-width: 700px;
@@ -162,33 +179,35 @@ section {
 /* Projects grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns max-width */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* 2 columns max-width */
   gap: 20px;
 }
 
 .project-card {
-  background-color: #1A231F;
+  background-color: #5f4c52;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
 .site-footer {
-  background-color: #070a07;
-  color: #fff;
+  background-color: #0d0e11;
+  color: #e0e2f0;
   text-align: center;
   padding: 20px 0;
 }
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
+
   .main-nav ul,
   .social-nav ul {
     flex-direction: column;
