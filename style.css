@@ -8,13 +8,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #fdfdfd;
+  background: #121212ff;
   color: #222;
 }
 
 /* Navigation */
 header {
-  background: #111;
+  background: #121212ff;
   color: #fff;
   padding: 1rem;
 }
@@ -47,12 +47,6 @@ section {
   margin: auto;
 }
 
-#hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: #eee;
-}
-
 /* Projects */
 .project-grid {
   display: grid;
@@ -65,12 +59,4 @@ section {
   border: 1px solid #ddd;
   border-radius: 8px;
   background: #fff;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #111;
-  color: #fff;
 }
